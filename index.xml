@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>OLIVER GIDDINGS</title><link>https://example.org/</link><description>Recent content on OLIVER GIDDINGS</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/index.xml" rel="self" type="application/rss+xml"/><item><title>Archives</title><link>https://example.org/page/archives/</link><pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate><guid>https://example.org/page/archives/</guid><description/></item><item><title/><link>https://example.org/page/links/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/page/links/</guid><description>&lt;!-- ---
+title: Links
+links:
+- title: GitHub
+description: GitHub is the world's largest software development platform.
+website: https://github.com
+image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+- title: TypeScript
+description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+website: https://www.typescriptlang.org
+image: ts-logo-128.jpg
+menu:
+main:
+weight: -50
+params:
+icon: link
+comments: false
+---
+To use this feature, add `links` section to frontmatter.
+This page's frontmatter:
+```yaml
+links:
+- title: GitHub
+description: GitHub is the world's largest software development platform.
+website: https://github.com
+image: https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png
+- title: TypeScript
+description: TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.
+website: https://www.typescriptlang.org
+image: ts-logo-128.jpg
+```
+`image` field accepts both local and external images. --></description></item><item><title>About</title><link>https://example.org/page/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/page/about/</guid><description>&lt;p>&lt;strong>&lt;a class="link" href="OliverGiddings_TechnicalArtist_Resume.pdf" >MY RESUME&lt;/a>&lt;/strong>&lt;/p>
+&lt;h2 id="bio">BIO
+&lt;/h2>&lt;p>Hi, I&amp;rsquo;m Oliver, a Technical Artist specializing in shaders and materials, currently working at Vanimals.&lt;/p>
+&lt;p>I graduated in 2019 from Limkokwing University of Creative Technology in Malaysia, where I studied game art development. I started my career as an Environment Artist and transitioned to a Technical Artist at Vanimals.&lt;/p>
+&lt;p>I work at an indie studio where I often juggle both art and tech roles. Currently, I focus on graphics, specifically shaders and rendering technology, blending artistic vision with technical skills to enhance both NPR and PBR graphics. I serve as a bridge between artists and tech teams, leveraging my negotiation and software skills to improve game visuals.&lt;/p>
+&lt;h2 id="work-experience">WORK EXPERIENCE
+&lt;/h2>&lt;h3 id="vanimals">Vanimals
+&lt;/h3>&lt;p>&lt;strong>Roles&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Technical Artist (SEP 2018 - &lt;strong>PRESENT&lt;/strong>)&lt;/li>
+&lt;li>Technical Artist Intern (Dec 2018 - Mar 2019)&lt;/li>
+&lt;/ul>
+&lt;p>&lt;strong>Responsibilities&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>Create shaders in &lt;strong>HLSL/ShaderGraph/ASE&lt;/strong> for Unity.&lt;/li>
+&lt;li>Create models including environment and character in &lt;strong>3DsMax/Zbrush&lt;/strong>.&lt;/li>
+&lt;li>Create tools in &lt;strong>C#&lt;/strong> for Unity, &lt;strong>MaxScript/Python&lt;/strong> for 3DsMax.&lt;/li>
+&lt;li>Create VFX in Unity.&lt;/li>
+&lt;li>Create level art and light baking.&lt;/li>
+&lt;li>Develop tools to improve art pipeline and workflow.&lt;/li>
+&lt;li>Optimize asset pipeline and workflow.&lt;/li>
+&lt;li>Work closely with other team members to improve the game.&lt;/li>
+&lt;/ul>
+&lt;h2 id="education">EDUCATION
+&lt;/h2>&lt;ul>
+&lt;li>&lt;strong>Limkokwing University of Creative Technology&lt;/strong>, Malaysia
+&lt;ul>
+&lt;li>Bachelor of Arts (HONS) in Games Art Development&lt;/li>
+&lt;li>2016-2019&lt;/li>
+&lt;li>GPA : 3.73&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="skills">SKILLS
+&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">Type&lt;/th>
+&lt;th style="text-align:center">Skill&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">ART&lt;/td>
+&lt;td style="text-align:center">Modelling, Scuplting, Retopology, Unwrapping, Texturing, Lighting, VFX&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">TECH&lt;/td>
+&lt;td style="text-align:center">Shaders, Performance, Pipeline, Version Control, Tools&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">CODE&lt;/td>
+&lt;td style="text-align:center">C#, HLSL, GLSL, Blueprint, Python, MaxScript&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="software">SOFTWARE
+&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">Type&lt;/th>
+&lt;th style="text-align:center">Software&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">3D Modeling&lt;/td>
+&lt;td style="text-align:center">3DS Max, Maya, ZBrush&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">Texturing&lt;/td>
+&lt;td style="text-align:center">Substance Designer, Substance Painter, Photoshop, Bodypaint&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">Version Control&lt;/td>
+&lt;td style="text-align:center">Git, SVN, Perforce&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">Engines&lt;/td>
+&lt;td style="text-align:center">Unity, Unreal Engine&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="languages">LANGUAGES
+&lt;/h2>&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">Language&lt;/th>
+&lt;th style="text-align:center">Proficiency&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">Mandarin&lt;/td>
+&lt;td style="text-align:center">Native&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">English&lt;/td>
+&lt;td style="text-align:center">Working proficiency&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;h2 id="contact">CONTACT
+&lt;/h2>&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.linkedin.com/in/oliver-giddings/" target="_blank" rel="noopener"
+>LinkedIn&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://twitter.com/OliverGiddings" target="_blank" rel="noopener"
+>Twitter&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="mailto:my@email.com" >Email&lt;/a>&lt;/li>
+&lt;li>PhoneNumber:&lt;/li>
+&lt;/ul></description></item><item><title>Search</title><link>https://example.org/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/page/search/</guid><description/></item></channel></rss>
