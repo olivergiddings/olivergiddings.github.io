@@ -1,1 +1,303 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>UNDYING on OLIVER GIDDINGS</title><link>https://example.org/categories/undying/</link><description>Recent content in UNDYING on OLIVER GIDDINGS</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://example.org/categories/undying/index.xml" rel="self" type="application/rss+xml"/></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>UNDYING on OLIVER GIDDINGS</title><link>https://example.org/categories/undying/</link><description>Recent content in UNDYING on OLIVER GIDDINGS</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 21 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/categories/undying/index.xml" rel="self" type="application/rss+xml"/><item><title>UNDYING - Breakdown</title><link>https://example.org/post/undying-breakdown/</link><pubDate>Sun, 21 Jul 2024 00:00:00 +0000</pubDate><guid>https://example.org/post/undying-breakdown/</guid><description>&lt;img src="https://img.game8.co/3872004/3372fe1074f32ecd7eaf5ae9e88097fb.png/show" alt="Featured image of post UNDYING - Breakdown" />&lt;h1 id="summary">SUMMARY
+&lt;/h1>&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/p-EVXF98sEo"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;strong>&lt;a class="link" href="https://store.steampowered.com/app/638990/_/" target="_blank" rel="noopener"
+>Undying&lt;/a>&lt;/strong> is my first project as a technical artist. I started as an environment artist and later transitioned into a technical artist role. This is a graphic comparison between the first version and the current version.&lt;/p>
+&lt;p>&lt;img src="https://example.org/Comparison/Before-City.png"
+loading="lazy"
+alt="Before"
+>&lt;img src="https://example.org/Comparison/After-City.png"
+loading="lazy"
+alt="After"
+>&lt;br>
+&lt;img src="https://example.org/Comparison/Before-RV.png"
+loading="lazy"
+alt="Before"
+>&lt;img src="https://example.org/Comparison/After-RV.png"
+loading="lazy"
+alt="After"
+>&lt;br>
+&lt;img src="https://example.org/Comparison/Before-SuperMarket.png"
+loading="lazy"
+alt="Before"
+>&lt;img src="https://example.org/Comparison/After-SuperMarket.png"
+loading="lazy"
+alt="After"
+>&lt;br>
+&lt;img src="https://example.org/Comparison/Before-Market.png"
+loading="lazy"
+alt="Before"
+>&lt;img src="https://example.org/Comparison/After-Market.png"
+loading="lazy"
+alt="After"
+>&lt;/p>
+&lt;h2 id="duration">DURATION
+&lt;/h2>&lt;ul>
+&lt;li>&lt;strong>Environment Artist&lt;/strong> Intern (Dec 2018 - Mar 2019)&lt;/li>
+&lt;li>&lt;strong>Technical Artist&lt;/strong> in Vanimals (Aug 2019 - Jun 2024)&lt;/li>
+&lt;/ul>
+&lt;h2 id="content">CONTENT
+&lt;/h2>&lt;ul>
+&lt;li>Create &lt;strong>shaders in HLSL/ShaderGraph/ASE&lt;/strong> for Unity.&lt;/li>
+&lt;li>Create stylized props/environment/characters in &lt;strong>3DsMax/Zbrush&lt;/strong>.&lt;/li>
+&lt;li>Create VFX in Unity.&lt;/li>
+&lt;li>Create tools in &lt;strong>C#&lt;/strong>, &lt;strong>MaxScript/Python&lt;/strong> for 3DsMax.&lt;/li>
+&lt;li>Create level art and light baking, and implemented it with tools and shaders.&lt;/li>
+&lt;li>Profile and improved graphics and performance.&lt;/li>
+&lt;li>Optimize workflow and pipeline.&lt;/li>
+&lt;li>Cooperate with engineers to ship the game on Nintendo Switch, Mobile, and VR.&lt;/li>
+&lt;/ul>
+&lt;h1 id="rendering">RENDERING
+&lt;/h1>&lt;h2 id="cel-shading">CEL-SHADING
+&lt;/h2>&lt;p>We implemented simple cel-shading with stylized fresnel and built an HLSL library to ensure the modularity and reusability of functions.&lt;/p>
+&lt;p>&lt;img src="https://cdnb.artstation.com/p/assets/images/images/077/821/363/original/oliver-giddings-undying-shader.gif?1720456398"
+loading="lazy"
+alt="Character Shader"
+>&lt;/p>
+&lt;p>We used shaders to control the saturation instead of relying on post-processing, making it easier to achieve the desired effects. For instance, in the game Undying, the city loses power midway through the game. To create a contrasting mood, the saturation in well-lit areas remains normal, while the overall scene is slightly desaturated. This way, when players are inside a house without light, it evokes a sense of hopelessness. Once the power is restored, the environment becomes brighter and more saturated, enhancing the contrast in mood.&lt;/p>
+&lt;p>&lt;img src="https://cdna.artstation.com/p/assets/images/images/077/821/394/large/oliver-giddings-scenesaturate.jpg?1720456445"
+loading="lazy"
+alt="Saturation Control"
+>&lt;img src="https://cdnb.artstation.com/p/assets/images/images/077/821/377/original/oliver-giddings-lightcomparison.gif?1720456423"
+loading="lazy"
+alt="Light Comparison"
+>&lt;/p>
+&lt;p>As we needed a TOD system, we used light maps to store light information and AO, and light probes for dynamic and small objects. We also used a global variable to control other shaders such as environment VFX and water.&lt;/p>
+&lt;p>&lt;img src="https://cdna.artstation.com/p/assets/images/images/078/293/864/original/oliver-giddings-gifmaker-me-24.gif?1721730375"
+loading="lazy"
+alt="TOD Preview"
+>&lt;img src="https://cdna.artstation.com/p/assets/images/images/077/821/390/original/oliver-giddings-scene-progress.gif?1720456439"
+loading="lazy"
+alt="Environment Lit Progress"
+>&lt;/p>
+&lt;p>The item shader is based on our cel-shading, with added glow to make it more noticeable.&lt;/p>
+&lt;p>&lt;img src="https://cdna.artstation.com/p/assets/images/images/077/821/374/original/oliver-giddings-item-glow.gif?1720456418"
+loading="lazy"
+alt="Item Glow"
+>&lt;/p>
+&lt;p>We found that the glow looked too similar, so we added some offset based on its position.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-HLSL" data-lang="HLSL">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">//To create offset for each glowing item.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">const&lt;/span> &lt;span style="color:#66d9ef">float3&lt;/span> objectPosition &lt;span style="color:#f92672">=&lt;/span> IN.objectPosition.xyz;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> UV &lt;span style="color:#f92672">+=&lt;/span> ((objectPosition.x &lt;span style="color:#f92672">+&lt;/span> objectPosition.z));
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="outline">OUTLINE
+&lt;/h2>&lt;p>We used simple Vertex Extrusion to create our outline. In the shader, we scaled the vertices along their normals in the opposite direction to create an expanded silhouette. This is easy to achieve, but it doesn&amp;rsquo;t look good when normal directions are not continuous.&lt;/p>
+&lt;p>&lt;img src="https://example.org/Outline/BadOutline.png"
+loading="lazy"
+alt="Original Normal"
+>&lt;img src="https://example.org/Outline/GoodOutline.png"
+loading="lazy"
+alt="Modified Normal"
+>&lt;/p>
+&lt;p>So, we used C# tools to calculate smoothed normals for each mesh.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-C#" data-lang="C#">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">//SmoothNormal.cs&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">//To create offset for each glowing item.&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">private&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> List&amp;lt;Vector3&amp;gt; GetSmoothNormals(Mesh mesh)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//Group vertices by location&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">var&lt;/span> groups = mesh.vertices.Select((vertex,index)=&amp;gt; &lt;span style="color:#66d9ef">new&lt;/span> KeyValuePair&amp;lt;Vector3,&lt;span style="color:#66d9ef">int&lt;/span>&amp;gt;(vertex,index)).GroupBy(pair=&amp;gt;pair.Key);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">var&lt;/span> smoothNormals = &lt;span style="color:#66d9ef">new&lt;/span> List&amp;lt;Vector3&amp;gt;(mesh.normals);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//Average normals for grouped vertices&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">foreach&lt;/span>(&lt;span style="color:#66d9ef">var&lt;/span> &lt;span style="color:#66d9ef">group&lt;/span> &lt;span style="color:#66d9ef">in&lt;/span> groups)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//Skip single vertices&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(&lt;span style="color:#66d9ef">group&lt;/span>.Count() == &lt;span style="color:#ae81ff">1&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">continue&lt;/span>;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//Calculate the average normal&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">var&lt;/span> smoothNormal = Vector3.zero;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">foreach&lt;/span>(&lt;span style="color:#66d9ef">var&lt;/span> pair &lt;span style="color:#66d9ef">in&lt;/span> &lt;span style="color:#66d9ef">group&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> smoothNormal += smoothNormals[pair.Value];
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> smoothNormal.Normalize();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">//Assign smooth normal to each vertex&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">foreach&lt;/span>(&lt;span style="color:#66d9ef">var&lt;/span> pair &lt;span style="color:#66d9ef">in&lt;/span> &lt;span style="color:#66d9ef">group&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> smoothNormals[pair.Value] = smoothNormal;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">return&lt;/span> smoothNormals;
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">public&lt;/span> &lt;span style="color:#66d9ef">static&lt;/span> &lt;span style="color:#66d9ef">void&lt;/span> SetSmoothNormalsToTangent(&lt;span style="color:#66d9ef">this&lt;/span> Mesh mesh)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">var&lt;/span> normals = GetSmoothNormals(mesh);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">var&lt;/span> tangents = normals.Select(normal =&amp;gt; &lt;span style="color:#66d9ef">new&lt;/span> Vector4(normal.x, normal.y, normal.z, &lt;span style="color:#ae81ff">1&lt;/span>)).ToList();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> mesh.SetTangents(tangents);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>And we called this function in our import pipeline to store the smoothed normals into the mesh&amp;rsquo;s tangent.&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-C#" data-lang="C#">&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">//Undying_FBXImporter.cs&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#75715e">//Undying_FBXImporter : AssetPostProcessor&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> OnPostprocessModel(GameObject g)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> SetSmoothNormalToTangent(g.transform);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>&lt;span style="color:#66d9ef">void&lt;/span> SetSmoothNormalToTangent(Transform t)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>{
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span> (t.gameObject.TryGetComponent&amp;lt;MeshFilter&amp;gt;(&lt;span style="color:#66d9ef">out&lt;/span> &lt;span style="color:#66d9ef">var&lt;/span> meshFilter))
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">if&lt;/span>(meshFilter.sharedMesh != &lt;span style="color:#66d9ef">null&lt;/span>)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> meshFilter.sharedMesh.SetSmoothNormalsToTangent();
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#75715e">// Recurse&lt;/span>
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> &lt;span style="color:#66d9ef">foreach&lt;/span> (Transform child &lt;span style="color:#66d9ef">in&lt;/span> t)
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> {
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> SetSmoothNormalToTangent(child);
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span> }
+&lt;/span>&lt;/span>&lt;span style="display:flex;">&lt;span>}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>This is the result in the mesh&amp;rsquo;s inspector.&lt;/p>
+&lt;p>&lt;img src="https://example.org/Outline/NormalView.png"
+loading="lazy"
+alt="Normal"
+>&lt;img src="https://example.org/Outline/TangentView.png"
+loading="lazy"
+alt="Tangent"
+>&lt;/p>
+&lt;h2 id="water">WATER
+&lt;/h2>&lt;p>In Undying, we used scene depth to calculate the water&amp;rsquo;s foam, and I stored the smoothed foam to create more layers.&lt;/p>
+&lt;p>&lt;img src="https://cdna.artstation.com/p/assets/images/images/077/821/210/original/oliver-giddings-water-process.gif?1720456163"
+loading="lazy"
+alt="Water Process"
+>&lt;/p>
+&lt;p>The flow uses model UV since the river is a static mesh.
+&lt;img src="https://example.org/Water/8.FlowExplain.jpg"
+loading="lazy"
+alt="Water UV"
+>&lt;/p>
+&lt;p>I used Voronoi noise to create foam patterns. To make it look more natural, we used two layers of noise to control the edges.&lt;/p>
+&lt;p>&lt;img src="https://example.org/Water/9.FoamLayer.jpg"
+loading="lazy"
+alt="First Foam"
+>&lt;img src="https://example.org/Water/10.SecondLayer.jpg"
+loading="lazy"
+alt="Second Foam"
+>&lt;/p>
+&lt;h2 id="others">OTHERS
+&lt;/h2>&lt;h3 id="look-through">LOOK THROUGH
+&lt;/h3>&lt;p>I used render objects to create look-through passes.&lt;/p>
+&lt;p>&lt;img src="https://cdna.artstation.com/p/assets/images/images/077/821/388/original/oliver-giddings-lookthough.gif?1720456432"
+loading="lazy"
+alt="Look Through"
+>&lt;/p>
+&lt;h3 id="blood">BLOOD
+&lt;/h3>&lt;p>We initially used meshes to introduce blood stains, but they lacked variation. Players noticed that the blood looked too similar. So, I created a procedural blood pattern based on position. Blood stains are planes in the world, so they don&amp;rsquo;t use the Y-axis to control height. I used the Y-axis to create offsets for more variation.&lt;/p>
+&lt;p>&lt;img src="https://cdna.artstation.com/p/assets/images/images/077/821/602/large/oliver-giddings-blood-old.jpg?1720456829"
+loading="lazy"
+alt="Old"
+>
+&lt;img src="https://cdnb.artstation.com/p/assets/images/images/077/822/453/original/oliver-giddings-gifmaker-me-14.gif?1720458277"
+loading="lazy"
+alt="New"
+>
+&lt;img src="https://cdnb.artstation.com/p/assets/images/images/077/822/799/large/oliver-giddings-3dc4b035b01d951d25d23e4d4ed7297.jpg?1720458877"
+loading="lazy"
+alt="Shader"
+>&lt;/p>
+&lt;h3 id="skybox">SKYBOX
+&lt;/h3>&lt;p>Undying is a top-down game, but we needed a skybox for some cut-scenes. I created a simple stylized procedural skybox. The sun&amp;rsquo;s position is static, as required by our designer.&lt;/p>
+&lt;p>&lt;img src="https://cdnb.artstation.com/p/assets/images/images/077/822/969/original/oliver-giddings-skybox-min.gif?1720459148"
+loading="lazy"
+alt="Skybox"
+>
+&lt;img src="https://cdna.artstation.com/p/assets/images/images/077/822/950/large/oliver-giddings-skyboxgraph.jpg?1720459105"
+loading="lazy"
+alt="Made in Shader Graph"
+>&lt;/p>
+&lt;h3 id="post-processing">POST-PROCESSING
+&lt;/h3>&lt;p>&lt;img src="https://example.org/Shader/PoisonScreen.gif"
+loading="lazy"
+alt="Poisoned"
+>&lt;/p>
+&lt;h1 id="modeling">MODELING
+&lt;/h1>&lt;p>We only had two 3D artists on the team, so I had to do a lot of modeling tasks. I believe I created at least half of the models in the game. Here are some of the models I created:&lt;/p>
+&lt;p>&lt;img src="https://cdna.artstation.com/p/assets/images/images/077/818/066/large/oliver-giddings-model-character.jpg?1720451034"
+loading="lazy"
+>
+&lt;img src="https://cdna.artstation.com/p/assets/images/images/077/818/056/large/oliver-giddings-model-vehicle.jpg?1720451027"
+loading="lazy"
+>
+&lt;img src="https://cdna.artstation.com/p/assets/images/images/077/818/106/large/oliver-giddings-model-item.jpg?1720451091"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="environment-art">ENVIRONMENT ART
+&lt;/h1>&lt;p>I uploaded all of my environment artwork to Artstation. You can check it out here: : &lt;a class="link" href="https://www.artstation.com/olivergiddings/albums/13101857" target="_blank" rel="noopener"
+>https://www.artstation.com/olivergiddings/albums/13101857&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://example.org/post/undying-breakdown/Pictures/EnvironmentArt.png"
+width="1723"
+height="582"
+srcset="https://example.org/post/undying-breakdown/Pictures/EnvironmentArt_hu4a73d3002d0ad4ccb80b2252d7207ae6_1644888_480x0_resize_box_3.png 480w, https://example.org/post/undying-breakdown/Pictures/EnvironmentArt_hu4a73d3002d0ad4ccb80b2252d7207ae6_1644888_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="296"
+data-flex-basis="710px"
+>&lt;/p>
+&lt;h1 id="vfx">VFX
+&lt;/h1>&lt;p>I did all the VFX work for Undying. The VFX work is also uploaded to Artstation for you to check out :） &lt;a class="link" href="https://www.artstation.com/artwork/QXde43" target="_blank" rel="noopener"
+>https://www.artstation.com/artwork/QXde43&lt;/a>&lt;/p>
+&lt;p>&lt;img src="https://cdna.artstation.com/p/assets/images/images/077/820/856/original/oliver-giddings-gifmaker-me-18.gif?1720455691"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="volumetric-light">Volumetric light
+&lt;/h2>&lt;p>The volumetric light we use in Undying is actually a rigged square, So is a lot easier for us to achieve clean volumetric light in low cost.&lt;/p>
+&lt;p>&lt;img src="https://example.org/Shader/Volumetric.gif"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="shader-breakdown">Shader Breakdown
+&lt;/h2>&lt;p>The shader of particles in Undying is quite simple, We use camera depth to create soft edges for particles in shader graph.&lt;/p>
+&lt;p>&lt;img src="https://example.org/Shader/On.png"
+loading="lazy"
+>&lt;img src="https://example.org/Shader/Off.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://example.org/Shader/Alpha.png"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="tools--pipeline">TOOLS &amp;amp; PIPELINE
+&lt;/h1>&lt;h2 id="tod-tool">TOD Tool
+&lt;/h2>&lt;p>We have hundreds of scenes in Undying. Manually setting up everything for each scene is very time-consuming. To streamline this process, I developed a tool to initialize basic lighting objects and environment settings. This allows anyone on the team to easily make adjustments. And also easier to debug by artists.&lt;/p>
+&lt;p>&lt;img src="https://cdna.artstation.com/p/assets/images/images/078/294/688/original/oliver-giddings-gifmaker-me19-ezgif-com-crop.gif?1721731848"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="thumbnail-generator">Thumbnail Generator
+&lt;/h2>&lt;p>Most of our icons are created by our 2D artist. However, in the later stages of development, our designers came up with the idea that players should be able to bring &amp;ldquo;anything&amp;rdquo; they like into their homes. This requires icons for each prop. To facilitate this, I created a thumbnail generator tool for batch rendering icons. We simply drag our existing prefabs into the tool, click batch render, and we get these nice little icons. This tool also supports background sprites. We can place sprites on the canvas and render them with the icons.&lt;/p>
+&lt;p>&lt;img src="https://example.org/Tools/ThumbnailGen_01.png"
+loading="lazy"
+>&lt;img src="https://example.org/Tools/ThumbnailGen_02.png"
+loading="lazy"
+>&lt;img src="https://example.org/Tools/ThumbnailGen_03.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="other-tools">Other tools
+&lt;/h2>&lt;p>My goal was to make some commonly used control into tools to make our live easier.&lt;/p>
+&lt;p>&lt;img src="https://example.org/Tools/ArtTools.png"
+loading="lazy"
+>&lt;img src="https://example.org/Tools/Common.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="import-pipeline">Import pipeline
+&lt;/h2>&lt;p>As we need the outline works correctly, we need to use script generated normal information. And again is hard to set every model mannualy, So I put everything into the assets pre processor to make this pipeline smoother. and also export tool from 3DSMAX&lt;/p>
+&lt;p>&lt;img src="https://example.org/Tools/Pipeline_01.png"
+loading="lazy"
+>&lt;img src="https://example.org/Tools/Pipeline_02.png"
+loading="lazy"
+>&lt;img src="https://example.org/Tools/Pipeline_03.png"
+loading="lazy"
+>&lt;/p></description></item></channel></rss>
