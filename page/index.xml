@@ -31,34 +31,37 @@ image: ts-logo-128.jpg
 ```
 `image` field accepts both local and external images. --></description></item><item><title>About</title><link>https://example.org/page/about/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/page/about/</guid><description>&lt;p>&lt;strong>&lt;a class="link" href="OliverGiddings_TechnicalArtist_Resume.pdf" >MY RESUME&lt;/a>&lt;/strong>&lt;/p>
 &lt;h2 id="bio">BIO
-&lt;/h2>&lt;p>Hi, I&amp;rsquo;m Oliver, a Technical Artist specializing in shaders and materials, currently working at Vanimals.&lt;/p>
-&lt;p>I graduated in 2019 from Limkokwing University of Creative Technology in Malaysia, where I studied game art development. I started my career as an Environment Artist and transitioned to a Technical Artist at Vanimals.&lt;/p>
-&lt;p>I work at an indie studio where I often juggle both art and tech roles. Currently, I focus on graphics, specifically shaders and rendering technology, blending artistic vision with technical skills to enhance both NPR and PBR graphics. I serve as a bridge between artists and tech teams, leveraging my negotiation and software skills to improve game visuals.&lt;/p>
+&lt;/h2>&lt;p>Hi, I&amp;rsquo;m Oliver, a Senior Technical Artist specializing in shaders and procedural workflows. I&amp;rsquo;m currently working at Tencent Games in Shanghai, contributing to the development of an unanounced open-world title built with Unreal Engine 5.&lt;/p>
+&lt;p>I&amp;rsquo;m open to relocation for projects that align with my interests. As a British passport holder, I do not require visa sponsorship to work in the UK.&lt;/p>
+&lt;p>I hold a BA in Game Art Development from Limkokwing University of Creative Technology, Malaysia. I began my career as an Environment Artist and gradually shifted into a Technical Artist role at Vanimals, an indie game studio. There, I developed a broad skill set by bridging the gap between art and engineering.&lt;/p>
+&lt;p>At Tencent, my focus is on procedural content generation using &lt;strong>Houdini&lt;/strong> and &lt;strong>Unreal Engine PCG&lt;/strong>, as well as environment rendering, performance optimization, tool and pipeline development. I’m passionate about crafting efficient visual systems—whether stylized or physically based—that empower teams and enhance game quality.&lt;/p>
 &lt;h2 id="work-experience">WORK EXPERIENCE
-&lt;/h2>&lt;h3 id="vanimals">Vanimals
-&lt;/h3>&lt;p>&lt;strong>Roles&lt;/strong>&lt;/p>
+&lt;/h2>&lt;h3 id="tencent-games--shanghai">Tencent Games – Shanghai
+&lt;/h3>&lt;p>&lt;strong>Senior Technical Artist&lt;/strong> (Nov 2024 – &lt;strong>Present&lt;/strong>)&lt;/p>
 &lt;ul>
-&lt;li>Technical Artist (SEP 2018 - &lt;strong>PRESENT&lt;/strong>)&lt;/li>
-&lt;li>Technical Artist Intern (Dec 2018 - Mar 2019)&lt;/li>
+&lt;li>Developed procedural content using Houdini and UE PCG&lt;/li>
+&lt;li>Built workflows, pipelines, and tools using &lt;strong>Blueprint&lt;/strong> and &lt;strong>Python&lt;/strong>&lt;/li>
+&lt;li>Handled rendering, performance optimization, and pipeline tooling in &lt;strong>Unreal Engine 5&lt;/strong>&lt;/li>
+&lt;li>Supported development across both Unity and Unreal Engine projects&lt;/li>
+&lt;li>Collaborated with artists, designers, and engineers to ensure high visual quality and scalable production&lt;/li>
 &lt;/ul>
-&lt;p>&lt;strong>Responsibilities&lt;/strong>&lt;/p>
+&lt;h3 id="vanimals---beijing">Vanimals – Beijing
+&lt;/h3>&lt;p>&lt;strong>Technical Artist&lt;/strong> (Sep 2018 – Oct 2024)&lt;br>
+&lt;strong>Technical Artist Intern&lt;/strong> (Dec 2018 – Mar 2019)&lt;/p>
 &lt;ul>
-&lt;li>Create shaders in &lt;strong>HLSL/ShaderGraph/ASE&lt;/strong> for Unity.&lt;/li>
-&lt;li>Create models including environment and character in &lt;strong>3DsMax/Zbrush&lt;/strong>.&lt;/li>
-&lt;li>Create tools in &lt;strong>C#&lt;/strong> for Unity, &lt;strong>MaxScript/Python&lt;/strong> for 3DsMax.&lt;/li>
-&lt;li>Create VFX in Unity.&lt;/li>
-&lt;li>Create level art and light baking.&lt;/li>
-&lt;li>Develop tools to improve art pipeline and workflow.&lt;/li>
-&lt;li>Optimize asset pipeline and workflow.&lt;/li>
-&lt;li>Work closely with other team members to improve the game.&lt;/li>
+&lt;li>Created shaders in &lt;strong>HLSL&lt;/strong>, &lt;strong>Shader Graph&lt;/strong>, and &lt;strong>Amplify Shader Editor&lt;/strong> for Unity&lt;/li>
+&lt;li>Built 3D assets (environments, characters) using &lt;strong>3Ds Max&lt;/strong> and &lt;strong>ZBrush&lt;/strong>&lt;/li>
+&lt;li>Developed tools using &lt;strong>C#&lt;/strong> (Unity), &lt;strong>MaxScript&lt;/strong>, and &lt;strong>Python&lt;/strong> (3Ds Max)&lt;/li>
+&lt;li>Designed and implemented VFX, lighting, and baked levels&lt;/li>
+&lt;li>Automated and optimized the art pipeline for better team efficiency&lt;/li>
 &lt;/ul>
 &lt;h2 id="education">EDUCATION
 &lt;/h2>&lt;ul>
 &lt;li>&lt;strong>Limkokwing University of Creative Technology&lt;/strong>, Malaysia
 &lt;ul>
-&lt;li>Bachelor of Arts (HONS) in Games Art Development&lt;/li>
-&lt;li>2016-2019&lt;/li>
-&lt;li>GPA : 3.73&lt;/li>
+&lt;li>Bachelor of Arts (HONS) in Game Art Development&lt;/li>
+&lt;li>2016–2019&lt;/li>
+&lt;li>GPA: 3.73&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul>
@@ -66,22 +69,22 @@ image: ts-logo-128.jpg
 &lt;/h2>&lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align:center">Type&lt;/th>
-&lt;th style="text-align:center">Skill&lt;/th>
+&lt;th style="text-align:center">Category&lt;/th>
+&lt;th style="text-align:center">Skills&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
-&lt;td style="text-align:center">ART&lt;/td>
-&lt;td style="text-align:center">Modelling, Scuplting, Retopology, Unwrapping, Texturing, Lighting, VFX&lt;/td>
+&lt;td style="text-align:center">TECH ART&lt;/td>
+&lt;td style="text-align:center">Shader Development, Procedural Generation, Optimization, Tool &amp;amp; Pipeline&lt;/td>
 &lt;/tr>
 &lt;tr>
-&lt;td style="text-align:center">TECH&lt;/td>
-&lt;td style="text-align:center">Shaders, Performance, Pipeline, Version Control, Tools&lt;/td>
+&lt;td style="text-align:center">ART&lt;/td>
+&lt;td style="text-align:center">3D Modeling, Sculpting, Retopology, UV Mapping, Texturing, Lighting, VFX&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:center">CODE&lt;/td>
-&lt;td style="text-align:center">C#, HLSL, GLSL, Blueprint, Python, MaxScript&lt;/td>
+&lt;td style="text-align:center">C#, HLSL, CG, Python, Blueprint, MaxScript, Shader Graph, Material Editor(UE)&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -89,26 +92,30 @@ image: ts-logo-128.jpg
 &lt;/h2>&lt;table>
 &lt;thead>
 &lt;tr>
-&lt;th style="text-align:center">Type&lt;/th>
+&lt;th style="text-align:center">Category&lt;/th>
 &lt;th style="text-align:center">Software&lt;/th>
 &lt;/tr>
 &lt;/thead>
 &lt;tbody>
 &lt;tr>
+&lt;td style="text-align:center">Game Engines&lt;/td>
+&lt;td style="text-align:center">Unreal Engine 5, Unity&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">Procedural Tools&lt;/td>
+&lt;td style="text-align:center">Houdini, Unreal Engine PCG&lt;/td>
+&lt;/tr>
+&lt;tr>
 &lt;td style="text-align:center">3D Modeling&lt;/td>
-&lt;td style="text-align:center">3DS Max, Maya, ZBrush&lt;/td>
+&lt;td style="text-align:center">3Ds Max, Maya, ZBrush&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:center">Texturing&lt;/td>
-&lt;td style="text-align:center">Substance Designer, Substance Painter, Photoshop, Bodypaint&lt;/td>
+&lt;td style="text-align:center">Substance Designer, Substance Painter, Photoshop&lt;/td>
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:center">Version Control&lt;/td>
-&lt;td style="text-align:center">Git, SVN, Perforce&lt;/td>
-&lt;/tr>
-&lt;tr>
-&lt;td style="text-align:center">Engines&lt;/td>
-&lt;td style="text-align:center">Unity, Unreal Engine&lt;/td>
+&lt;td style="text-align:center">Git, Perforce, SVN&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
@@ -127,28 +134,18 @@ image: ts-logo-128.jpg
 &lt;/tr>
 &lt;tr>
 &lt;td style="text-align:center">English&lt;/td>
-&lt;td style="text-align:center">Working proficiency&lt;/td>
+&lt;td style="text-align:center">Professional Working Proficiency&lt;/td>
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
 &lt;h2 id="contact">CONTACT
 &lt;/h2>&lt;ul>
-&lt;li>
-&lt;p>&lt;a class="link" href="https://www.linkedin.com/in/oliver-giddings/" target="_blank" rel="noopener"
->LinkedIn&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a class="link" href="https://twitter.com/OliverGiddings" target="_blank" rel="noopener"
->Twitter&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a class="link" href="mailto:olivergiddings2017@gmail.com" >Email&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a class="link" href="https://www.artstation.com/olivergiddings" target="_blank" rel="noopener"
->Artstation&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>PhoneNumber: +86 132 6178 2897&lt;/p>
-&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.linkedin.com/in/oliver-giddings/" target="_blank" rel="noopener"
+>LinkedIn&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://twitter.com/OliverGiddings" target="_blank" rel="noopener"
+>Twitter&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="mailto:olivergiddings2017@gmail.com" >Email&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.artstation.com/olivergiddings" target="_blank" rel="noopener"
+>ArtStation&lt;/a>&lt;/li>
+&lt;li>Phone: +86 132 6178 2897&lt;/li>
 &lt;/ul></description></item><item><title>Search</title><link>https://example.org/page/search/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://example.org/page/search/</guid><description/></item></channel></rss>
