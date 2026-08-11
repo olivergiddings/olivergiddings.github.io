@@ -14,32 +14,32 @@
 &lt;canvas data-canvas aria-label="Interactive three-dimensional dot product visualization">&lt;/canvas>
 &lt;div class="dot-product-lab__hint">Drag to orbit · Scroll to zoom&lt;/div>
 &lt;/div>
-&lt;pre>&lt;code>&amp;lt;aside class=&amp;quot;dot-product-lab__controls&amp;quot;&amp;gt;
-&amp;lt;div class=&amp;quot;dot-product-lab__result-label&amp;quot;&amp;gt;Current dot product&amp;lt;/div&amp;gt;
-&amp;lt;div class=&amp;quot;dot-product-lab__result&amp;quot; data-result&amp;gt;0.00&amp;lt;/div&amp;gt;
-&amp;lt;div class=&amp;quot;dot-product-lab__formula&amp;quot; data-formula&amp;gt;a · b = |a||b|cos(θ)&amp;lt;/div&amp;gt;
-&amp;lt;div class=&amp;quot;dot-product-lab__meaning&amp;quot; data-meaning&amp;gt;Positive: b has a component in the direction of a.&amp;lt;/div&amp;gt;
-&amp;lt;label class=&amp;quot;dot-product-lab__control&amp;quot;&amp;gt;
-&amp;lt;span&amp;gt;&amp;lt;b&amp;gt;Length of a&amp;lt;/b&amp;gt;&amp;lt;output data-a-value&amp;gt;2.00&amp;lt;/output&amp;gt;&amp;lt;/span&amp;gt;
-&amp;lt;input data-a type=&amp;quot;range&amp;quot; min=&amp;quot;0.4&amp;quot; max=&amp;quot;3&amp;quot; step=&amp;quot;0.05&amp;quot; value=&amp;quot;2&amp;quot;&amp;gt;
-&amp;lt;/label&amp;gt;
-&amp;lt;label class=&amp;quot;dot-product-lab__control&amp;quot;&amp;gt;
-&amp;lt;span&amp;gt;&amp;lt;b&amp;gt;Length of b&amp;lt;/b&amp;gt;&amp;lt;output data-b-value&amp;gt;1.60&amp;lt;/output&amp;gt;&amp;lt;/span&amp;gt;
-&amp;lt;input data-b type=&amp;quot;range&amp;quot; min=&amp;quot;0.4&amp;quot; max=&amp;quot;3&amp;quot; step=&amp;quot;0.05&amp;quot; value=&amp;quot;1.6&amp;quot;&amp;gt;
-&amp;lt;/label&amp;gt;
-&amp;lt;label class=&amp;quot;dot-product-lab__control&amp;quot;&amp;gt;
-&amp;lt;span&amp;gt;&amp;lt;b&amp;gt;Angle θ&amp;lt;/b&amp;gt;&amp;lt;output data-angle-value&amp;gt;55°&amp;lt;/output&amp;gt;&amp;lt;/span&amp;gt;
-&amp;lt;input data-angle type=&amp;quot;range&amp;quot; min=&amp;quot;0&amp;quot; max=&amp;quot;180&amp;quot; step=&amp;quot;1&amp;quot; value=&amp;quot;55&amp;quot;&amp;gt;
-&amp;lt;/label&amp;gt;
-&amp;lt;div class=&amp;quot;dot-product-lab__presets&amp;quot;&amp;gt;
-&amp;lt;span&amp;gt;Try a preset&amp;lt;/span&amp;gt;
-&amp;lt;div&amp;gt;
-&amp;lt;button type=&amp;quot;button&amp;quot; data-preset=&amp;quot;0&amp;quot;&amp;gt;Same direction&amp;lt;/button&amp;gt;
-&amp;lt;button type=&amp;quot;button&amp;quot; data-preset=&amp;quot;90&amp;quot;&amp;gt;Perpendicular&amp;lt;/button&amp;gt;
-&amp;lt;button type=&amp;quot;button&amp;quot; data-preset=&amp;quot;180&amp;quot;&amp;gt;Opposite direction&amp;lt;/button&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;/div&amp;gt;
-&amp;lt;button class=&amp;quot;dot-product-lab__play&amp;quot; type=&amp;quot;button&amp;quot; data-action=&amp;quot;play&amp;quot;&amp;gt;Play angle animation&amp;lt;/button&amp;gt;
+&lt;aside class="dot-product-lab__controls">
+&lt;div class="dot-product-lab__result-label">Current dot product&lt;/div>
+&lt;div class="dot-product-lab__result" data-result>0.00&lt;/div>
+&lt;div class="dot-product-lab__formula" data-formula>a · b = |a||b|cos(θ)&lt;/div>
+&lt;div class="dot-product-lab__meaning" data-meaning>Positive: b has a component in the direction of a.&lt;/div>
+&lt;label class="dot-product-lab__control">
+&lt;span>&lt;b>Length of a&lt;/b>&lt;output data-a-value>2.00&lt;/output>&lt;/span>
+&lt;input data-a type="range" min="0.4" max="3" step="0.05" value="2">
+&lt;/label>
+&lt;label class="dot-product-lab__control">
+&lt;span>&lt;b>Length of b&lt;/b>&lt;output data-b-value>1.60&lt;/output>&lt;/span>
+&lt;input data-b type="range" min="0.4" max="3" step="0.05" value="1.6">
+&lt;/label>
+&lt;label class="dot-product-lab__control">
+&lt;span>&lt;b>Angle θ&lt;/b>&lt;output data-angle-value>55°&lt;/output>&lt;/span>
+&lt;input data-angle type="range" min="0" max="180" step="1" value="55">
+&lt;/label>
+&lt;div class="dot-product-lab__presets">
+&lt;span>Try a preset&lt;/span>
+&lt;div>
+&lt;button type="button" data-preset="0">Same direction&lt;/button>
+&lt;button type="button" data-preset="90">Perpendicular&lt;/button>
+&lt;button type="button" data-preset="180">Opposite direction&lt;/button>
+&lt;/div>
+&lt;/div>
+&lt;pre>&lt;code> &amp;lt;button class=&amp;quot;dot-product-lab__play&amp;quot; type=&amp;quot;button&amp;quot; data-action=&amp;quot;play&amp;quot;&amp;gt;Play angle animation&amp;lt;/button&amp;gt;
 &amp;lt;/aside&amp;gt;
 &lt;/code>&lt;/pre>
 &lt;/div>
