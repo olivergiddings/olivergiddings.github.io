@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Interactive on OLIVER GIDDINGS</title><link>https://example.org/tags/interactive/</link><description>Recent content in Interactive on OLIVER GIDDINGS</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 11 Aug 2026 00:00:00 +0000</lastBuildDate><atom:link href="https://example.org/tags/interactive/index.xml" rel="self" type="application/rss+xml"/><item><title>DOT PRODUCT - Interactive Explorer</title><link>https://example.org/post/dot-product-explorer/</link><pubDate>Tue, 11 Aug 2026 00:00:00 +0000</pubDate><guid>https://example.org/post/dot-product-explorer/</guid><description>&lt;h1 id="dot-product">DOT PRODUCT
+&lt;/h1>&lt;p>The dot product is often introduced as a list of numbers. This experiment shows its geometric meaning: &lt;strong>how much of one vector points in the direction of another&lt;/strong>.&lt;/p>
+&lt;p>Drag the sliders, rotate the scene, and watch the projection and formula update together.&lt;/p>
+&lt;div class="dot-product-lab" data-dot-product-lab>
+&lt;div class="dot-product-lab__header">
+&lt;div>
+&lt;span class="dot-product-lab__eyebrow">Interactive linear algebra&lt;/span>
+&lt;h2>See the projection&lt;/h2>
+&lt;/div>
+&lt;button class="dot-product-lab__button" type="button" data-action="reset">Reset view&lt;/button>
+&lt;/div>
+&lt;div class="dot-product-lab__layout">
+&lt;div class="dot-product-lab__stage">
+&lt;canvas data-canvas aria-label="Interactive three-dimensional dot product visualization">&lt;/canvas>
+&lt;div class="dot-product-lab__hint">Drag to orbit · Scroll to zoom&lt;/div>
+&lt;/div>
+&lt;pre>&lt;code>&amp;lt;aside class=&amp;quot;dot-product-lab__controls&amp;quot;&amp;gt;
+&amp;lt;div class=&amp;quot;dot-product-lab__result-label&amp;quot;&amp;gt;Current dot product&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;dot-product-lab__result&amp;quot; data-result&amp;gt;0.00&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;dot-product-lab__formula&amp;quot; data-formula&amp;gt;a · b = |a||b|cos(θ)&amp;lt;/div&amp;gt;
+&amp;lt;div class=&amp;quot;dot-product-lab__meaning&amp;quot; data-meaning&amp;gt;Positive: b has a component in the direction of a.&amp;lt;/div&amp;gt;
+&amp;lt;label class=&amp;quot;dot-product-lab__control&amp;quot;&amp;gt;
+&amp;lt;span&amp;gt;&amp;lt;b&amp;gt;Length of a&amp;lt;/b&amp;gt;&amp;lt;output data-a-value&amp;gt;2.00&amp;lt;/output&amp;gt;&amp;lt;/span&amp;gt;
+&amp;lt;input data-a type=&amp;quot;range&amp;quot; min=&amp;quot;0.4&amp;quot; max=&amp;quot;3&amp;quot; step=&amp;quot;0.05&amp;quot; value=&amp;quot;2&amp;quot;&amp;gt;
+&amp;lt;/label&amp;gt;
+&amp;lt;label class=&amp;quot;dot-product-lab__control&amp;quot;&amp;gt;
+&amp;lt;span&amp;gt;&amp;lt;b&amp;gt;Length of b&amp;lt;/b&amp;gt;&amp;lt;output data-b-value&amp;gt;1.60&amp;lt;/output&amp;gt;&amp;lt;/span&amp;gt;
+&amp;lt;input data-b type=&amp;quot;range&amp;quot; min=&amp;quot;0.4&amp;quot; max=&amp;quot;3&amp;quot; step=&amp;quot;0.05&amp;quot; value=&amp;quot;1.6&amp;quot;&amp;gt;
+&amp;lt;/label&amp;gt;
+&amp;lt;label class=&amp;quot;dot-product-lab__control&amp;quot;&amp;gt;
+&amp;lt;span&amp;gt;&amp;lt;b&amp;gt;Angle θ&amp;lt;/b&amp;gt;&amp;lt;output data-angle-value&amp;gt;55°&amp;lt;/output&amp;gt;&amp;lt;/span&amp;gt;
+&amp;lt;input data-angle type=&amp;quot;range&amp;quot; min=&amp;quot;0&amp;quot; max=&amp;quot;180&amp;quot; step=&amp;quot;1&amp;quot; value=&amp;quot;55&amp;quot;&amp;gt;
+&amp;lt;/label&amp;gt;
+&amp;lt;div class=&amp;quot;dot-product-lab__presets&amp;quot;&amp;gt;
+&amp;lt;span&amp;gt;Try a preset&amp;lt;/span&amp;gt;
+&amp;lt;div&amp;gt;
+&amp;lt;button type=&amp;quot;button&amp;quot; data-preset=&amp;quot;0&amp;quot;&amp;gt;Same direction&amp;lt;/button&amp;gt;
+&amp;lt;button type=&amp;quot;button&amp;quot; data-preset=&amp;quot;90&amp;quot;&amp;gt;Perpendicular&amp;lt;/button&amp;gt;
+&amp;lt;button type=&amp;quot;button&amp;quot; data-preset=&amp;quot;180&amp;quot;&amp;gt;Opposite direction&amp;lt;/button&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;/div&amp;gt;
+&amp;lt;button class=&amp;quot;dot-product-lab__play&amp;quot; type=&amp;quot;button&amp;quot; data-action=&amp;quot;play&amp;quot;&amp;gt;Play angle animation&amp;lt;/button&amp;gt;
+&amp;lt;/aside&amp;gt;
+&lt;/code>&lt;/pre>
+&lt;/div>
+&lt;div class="dot-product-lab__steps">
+&lt;div class="dot-product-lab__step is-active" data-step="0">&lt;span>01&lt;/span>&lt;b>Two vectors&lt;/b>&lt;small>a and b start at the same origin.&lt;/small>&lt;/div>
+&lt;div class="dot-product-lab__step" data-step="1">&lt;span>02&lt;/span>&lt;b>Project b onto a&lt;/b>&lt;small>The green line is the useful component.&lt;/small>&lt;/div>
+&lt;div class="dot-product-lab__step" data-step="2">&lt;span>03&lt;/span>&lt;b>Read the sign&lt;/b>&lt;small>Acute is positive, right is zero, obtuse is negative.&lt;/small>&lt;/div>
+&lt;/div>
+&lt;/div>
+&lt;h2 id="the-idea-in-one-line">The idea in one line
+&lt;/h2>&lt;div class="highlight">&lt;pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">&lt;code class="language-text" data-lang="text">&lt;span style="display:flex;">&lt;span>a · b = |a||b|cos(θ)
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>The green projection is the geometric part that the dot product measures. When the angle is less than 90°, the projection points along &lt;strong>a&lt;/strong> and the result is positive. At 90° the projection disappears. Past 90° it points backwards and the result becomes negative.&lt;/p>
+&lt;script>
+(function () {
+const lab = document.querySelector('[data-dot-product-lab]');
+if (!lab) return;
+const canvas = lab.querySelector('[data-canvas]');
+const ctx = canvas.getContext('2d');
+const aInput = lab.querySelector('[data-a]');
+const bInput = lab.querySelector('[data-b]');
+const angleInput = lab.querySelector('[data-angle]');
+const result = lab.querySelector('[data-result]');
+const formula = lab.querySelector('[data-formula]');
+const meaning = lab.querySelector('[data-meaning]');
+const aValue = lab.querySelector('[data-a-value]');
+const bValue = lab.querySelector('[data-b-value]');
+const angleValue = lab.querySelector('[data-angle-value]');
+const playButton = lab.querySelector('[data-action="play"]');
+const state = { a: 2, b: 1.6, angle: 55, yaw: -0.7, pitch: 0.55, zoom: 1, playing: false, lastTime: 0 };
+const colors = { text: '#202124', muted: '#6b7280', grid: '#d9dee7', axis: '#9aa4b2', a: '#2563eb', b: '#e4572e', projection: '#12966f', angle: '#d08a00' };
+function resize() {
+const rect = canvas.getBoundingClientRect();
+const ratio = Math.min(window.devicePixelRatio || 1, 2);
+canvas.width = Math.max(1, Math.round(rect.width * ratio));
+canvas.height = Math.max(1, Math.round(rect.height * ratio));
+ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
+draw();
+}
+function project(vector) {
+const cy = Math.cos(state.yaw);
+const sy = Math.sin(state.yaw);
+const cp = Math.cos(state.pitch);
+const sp = Math.sin(state.pitch);
+const x = vector.x * cy + vector.z * sy;
+const z = -vector.x * sy + vector.z * cy;
+const y = vector.y * cp - z * sp;
+return { x, y, depth: vector.y * sp + z * cp };
+}
+function point(vector, width, height) {
+const p = project(vector);
+const scale = Math.min(width, height) * 0.18 * state.zoom;
+return { x: width * 0.47 + p.x * scale, y: height * 0.58 - p.y * scale, depth: p.depth };
+}
+function vectorLine(from, to, color, width, dashed) {
+ctx.save();
+ctx.strokeStyle = color;
+ctx.lineWidth = width;
+ctx.setLineDash(dashed ? [6, 5] : []);
+ctx.beginPath();
+ctx.moveTo(from.x, from.y);
+ctx.lineTo(to.x, to.y);
+ctx.stroke();
+ctx.setLineDash([]);
+const angle = Math.atan2(to.y - from.y, to.x - from.x);
+const size = dashed ? 7 : 10;
+ctx.fillStyle = color;
+ctx.beginPath();
+ctx.moveTo(to.x, to.y);
+ctx.lineTo(to.x - size * Math.cos(angle - 0.45), to.y - size * Math.sin(angle - 0.45));
+ctx.lineTo(to.x - size * Math.cos(angle + 0.45), to.y - size * Math.sin(angle + 0.45));
+ctx.closePath();
+ctx.fill();
+ctx.restore();
+}
+function label(text, x, y, color) {
+ctx.save();
+ctx.font = '500 14px system-ui, sans-serif';
+ctx.fillStyle = color;
+ctx.fillText(text, x + 8, y - 8);
+ctx.restore();
+}
+function drawGrid(width, height) {
+const range = 3.2;
+for (let i = -6; i &lt;= 6; i += 1) {
+const x1 = point({ x: -range, y: 0, z: i * 0.5 }, width, height);
+const x2 = point({ x: range, y: 0, z: i * 0.5 }, width, height);
+const y1 = point({ x: i * 0.5, y: 0, z: -range }, width, height);
+const y2 = point({ x: i * 0.5, y: 0, z: range }, width, height);
+ctx.strokeStyle = colors.grid;
+ctx.lineWidth = 1;
+ctx.beginPath();
+ctx.moveTo(x1.x, x1.y);
+ctx.lineTo(x2.x, x2.y);
+ctx.moveTo(y1.x, y1.y);
+ctx.lineTo(y2.x, y2.y);
+ctx.stroke();
+}
+}
+function drawAngle(origin, endA, endB) {
+const start = Math.atan2(endA.y - origin.y, endA.x - origin.x);
+const end = Math.atan2(endB.y - origin.y, endB.x - origin.x);
+let delta = end - start;
+while (delta > Math.PI) delta -= Math.PI * 2;
+while (delta &lt; -Math.PI) delta += Math.PI * 2;
+ctx.save();
+ctx.strokeStyle = colors.angle;
+ctx.lineWidth = 2;
+ctx.beginPath();
+ctx.arc(origin.x, origin.y, 42, start, start + delta, delta &lt; 0);
+ctx.stroke();
+ctx.font = '500 13px system-ui, sans-serif';
+ctx.fillStyle = colors.angle;
+ctx.fillText('θ', origin.x + Math.cos(start + delta * 0.5) * 53, origin.y + Math.sin(start + delta * 0.5) * 53);
+ctx.restore();
+}
+function draw() {
+const rect = canvas.getBoundingClientRect();
+const width = rect.width;
+const height = rect.height;
+if (!width || !height) return;
+ctx.clearRect(0, 0, width, height);
+drawGrid(width, height);
+const origin = point({ x: 0, y: 0, z: 0 }, width, height);
+const rad = state.angle * Math.PI / 180;
+const av = { x: state.a, y: 0, z: 0 };
+const bv = { x: state.b * Math.cos(rad), y: state.b * Math.sin(rad), z: 0 };
+const projection = { x: state.a * state.b * Math.cos(rad) / state.a, y: 0, z: 0 };
+const endA = point(av, width, height);
+const endB = point(bv, width, height);
+const endProjection = point(projection, width, height);
+ctx.strokeStyle = colors.axis;
+ctx.lineWidth = 1.5;
+const axisX = point({ x: 3.3, y: 0, z: 0 }, width, height);
+const axisY = point({ x: 0, y: 3.3, z: 0 }, width, height);
+const axisZ = point({ x: 0, y: 0, z: 3.3 }, width, height);
+[[axisX, 'x'], [axisY, 'y'], [axisZ, 'z']].forEach(function (item) {
+ctx.beginPath();
+ctx.moveTo(origin.x, origin.y);
+ctx.lineTo(item[0].x, item[0].y);
+ctx.stroke();
+label(item[1], item[0].x, item[0].y, colors.muted);
+});
+vectorLine(origin, endA, colors.a, 4, false);
+vectorLine(origin, endB, colors.b, 4, false);
+vectorLine(origin, endProjection, colors.projection, 3, false);
+vectorLine(endB, endProjection, colors.projection, 2, true);
+drawAngle(origin, endA, endB);
+label('a', endA.x, endA.y, colors.a);
+label('b', endB.x, endB.y, colors.b);
+label('projₐ(b)', endProjection.x, endProjection.y, colors.projection);
+ctx.fillStyle = colors.text;
+ctx.beginPath();
+ctx.arc(origin.x, origin.y, 4, 0, Math.PI * 2);
+ctx.fill();
+}
+function updateText() {
+const dot = state.a * state.b * Math.cos(state.angle * Math.PI / 180);
+result.textContent = dot.toFixed(2);
+formula.textContent = 'a · b = ' + state.a.toFixed(2) + ' × ' + state.b.toFixed(2) + ' × cos(' + state.angle + '°) = ' + dot.toFixed(2);
+aValue.value = state.a.toFixed(2);
+bValue.value = state.b.toFixed(2);
+angleValue.value = state.angle + '°';
+if (state.angle &lt; 89.5) {
+meaning.textContent = 'Positive: b has a component in the direction of a.';
+meaning.dataset.sign = 'positive';
+} else if (state.angle > 90.5) {
+meaning.textContent = 'Negative: b has a component opposite to the direction of a.';
+meaning.dataset.sign = 'negative';
+} else {
+meaning.textContent = 'Zero: b is perpendicular to a, so there is no projection.';
+meaning.dataset.sign = 'zero';
+}
+}
+function syncFromInputs() {
+state.a = Number(aInput.value);
+state.b = Number(bInput.value);
+state.angle = Number(angleInput.value);
+updateText();
+draw();
+}
+[aInput, bInput, angleInput].forEach(function (input) {
+input.addEventListener('input', syncFromInputs);
+});
+lab.querySelectorAll('[data-preset]').forEach(function (button) {
+button.addEventListener('click', function () {
+angleInput.value = button.dataset.preset;
+syncFromInputs();
+});
+});
+lab.querySelector('[data-action="reset"]').addEventListener('click', function () {
+state.yaw = -0.7;
+state.pitch = 0.55;
+state.zoom = 1;
+draw();
+});
+playButton.addEventListener('click', function () {
+state.playing = !state.playing;
+playButton.textContent = state.playing ? 'Pause angle animation' : 'Play angle animation';
+if (state.playing) requestAnimationFrame(animate);
+});
+function animate(time) {
+if (!state.playing) return;
+if (!state.lastTime) state.lastTime = time;
+const delta = Math.min(40, time - state.lastTime);
+state.lastTime = time;
+state.angle = 90 + Math.sin(time * 0.0012) * 90;
+angleInput.value = state.angle.toFixed(0);
+updateText();
+draw();
+requestAnimationFrame(animate);
+if (delta &lt; 0) state.lastTime = time;
+}
+let dragging = false;
+let lastX = 0;
+let lastY = 0;
+canvas.addEventListener('pointerdown', function (event) {
+dragging = true;
+lastX = event.clientX;
+lastY = event.clientY;
+canvas.setPointerCapture(event.pointerId);
+});
+canvas.addEventListener('pointermove', function (event) {
+if (!dragging) return;
+state.yaw += (event.clientX - lastX) * 0.008;
+state.pitch = Math.max(-1.2, Math.min(1.2, state.pitch + (event.clientY - lastY) * 0.008));
+lastX = event.clientX;
+lastY = event.clientY;
+draw();
+});
+canvas.addEventListener('pointerup', function () {
+dragging = false;
+});
+canvas.addEventListener('pointercancel', function () {
+dragging = false;
+});
+canvas.addEventListener('wheel', function (event) {
+event.preventDefault();
+state.zoom = Math.max(0.65, Math.min(1.5, state.zoom - event.deltaY * 0.001));
+draw();
+}, { passive: false });
+window.addEventListener('resize', resize);
+updateText();
+resize();
+}());
+&lt;/script>
+&lt;style>
+.dot-product-lab{--lab-ink:#202124;--lab-muted:#6b7280;--lab-border:#d9dee7;--lab-surface:#f7f9fc;--lab-blue:#2563eb;--lab-coral:#e4572e;--lab-green:#12966f;max-width:980px;margin:2.5rem 0;padding:1.25rem;border:1px solid var(--lab-border);border-radius:16px;background:#fff;color:var(--lab-ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:15px;line-height:1.5}.dot-product-lab *{box-sizing:border-box}.dot-product-lab__header{display:flex;align-items:flex-start;justify-content:space-between;gap:1rem;margin-bottom:1rem}.dot-product-lab h2{margin:.15rem 0 0;font-size:1.45rem;line-height:1.2;letter-spacing:-.02em}.dot-product-lab__eyebrow{color:var(--lab-muted);font-size:.72rem;letter-spacing:.12em;text-transform:uppercase}.dot-product-lab__button,.dot-product-lab__presets button,.dot-product-lab__play{border:1px solid var(--lab-border);border-radius:999px;background:#fff;color:var(--lab-ink);cursor:pointer;font:inherit;padding:.48rem .78rem}.dot-product-lab__button:hover,.dot-product-lab__presets button:hover,.dot-product-lab__play:hover{border-color:#9aa4b2;background:var(--lab-surface)}.dot-product-lab__layout{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(240px,.8fr);gap:1rem}.dot-product-lab__stage{position:relative;min-height:430px;overflow:hidden;border-radius:12px;background:var(--lab-surface);border:1px solid var(--lab-border)}.dot-product-lab canvas{display:block;width:100%;height:430px;touch-action:none;cursor:grab}.dot-product-lab canvas:active{cursor:grabbing}.dot-product-lab__hint{position:absolute;left:1rem;bottom:.85rem;color:var(--lab-muted);font-size:.75rem;pointer-events:none}.dot-product-lab__controls{padding:1.1rem;border:1px solid var(--lab-border);border-radius:12px;background:var(--lab-surface)}.dot-product-lab__result-label{color:var(--lab-muted);font-size:.78rem}.dot-product-lab__result{margin:.1rem 0 .35rem;color:var(--lab-ink);font-size:2.5rem;font-weight:600;letter-spacing:-.05em}.dot-product-lab__formula{min-height:2.7rem;color:var(--lab-muted);font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.78rem;line-height:1.5}.dot-product-lab__meaning{margin:1rem 0 1.3rem;padding:.65rem .75rem;border-left:3px solid var(--lab-green);background:#eaf7f2;color:#12664f;font-size:.82rem}.dot-product-lab__meaning[data-sign="negative"]{border-color:var(--lab-coral);background:#fff0ec;color:#9c341d}.dot-product-lab__meaning[data-sign="zero"]{border-color:#d08a00;background:#fff7df;color:#805600}.dot-product-lab__control{display:block;margin:1rem 0}.dot-product-lab__control span{display:flex;justify-content:space-between;gap:.8rem;margin-bottom:.35rem;font-size:.8rem}.dot-product-lab__control output{color:var(--lab-muted);font-variant-numeric:tabular-nums}.dot-product-lab input[type="range"]{display:block;width:100%;accent-color:var(--lab-blue)}.dot-product-lab__presets{margin-top:1.35rem;padding-top:1rem;border-top:1px solid var(--lab-border);color:var(--lab-muted);font-size:.76rem}.dot-product-lab__presets div{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.5rem}.dot-product-lab__presets button{font-size:.72rem;padding:.35rem .55rem}.dot-product-lab__play{width:100%;margin-top:1.25rem;border-color:var(--lab-blue);color:var(--lab-blue);font-size:.82rem}.dot-product-lab__steps{display:grid;grid-template-columns:repeat(3,1fr);gap:.65rem;margin-top:1rem}.dot-product-lab__step{padding:.8rem;border:1px solid var(--lab-border);border-radius:10px;background:#fff;color:var(--lab-muted)}.dot-product-lab__step span{display:block;margin-bottom:.35rem;color:var(--lab-blue);font-size:.7rem;font-weight:600;letter-spacing:.08em}.dot-product-lab__step b{display:block;color:var(--lab-ink);font-size:.82rem}.dot-product-lab__step small{display:block;margin-top:.25rem;font-size:.72rem;line-height:1.4}.dot-product-lab__step.is-active{border-color:#93b5ff;background:#f3f6ff}.dot-product-lab + h2{margin-top:2.5rem}@media(max-width:760px){.dot-product-lab{margin:1.5rem -1rem;padding:.9rem;border-width:1px;border-radius:12px}.dot-product-lab__layout{grid-template-columns:1fr}.dot-product-lab__stage{min-height:330px}.dot-product-lab canvas{height:330px}.dot-product-lab__steps{grid-template-columns:1fr}.dot-product-lab__header{align-items:center}.dot-product-lab h2{font-size:1.2rem}}
+&lt;/style></description></item></channel></rss>
