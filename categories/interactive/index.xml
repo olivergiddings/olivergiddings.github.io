@@ -69,15 +69,29 @@ const angleValue = lab.querySelector('[data-angle-value]');
 const playButton = lab.querySelector('[data-action="play"]');
 const state = { a: 2, b: 1.6, angle: 55, yaw: -0.7, pitch: 0.55, zoom: 1, playing: false, lastTime: 0 };
 const colors = { text: '#f5f7fb', muted: '#a9b2c1', grid: '#2a313c', axis: '#687486', a: '#6ea8ff', b: '#ff8668', projection: '#54d6ae', angle: '#f1bd5b' };
+const stage = lab.querySelector('.dot-product-lab__stage');
+let lastWidth = 0;
+let lastHeight = 0;
+let lastRatio = 0;
 function resize() {
 const rect = canvas.getBoundingClientRect();
 const width = Math.max(1, Math.round(rect.width));
 const height = Math.max(1, Math.round(rect.height));
 const ratio = Math.min(window.devicePixelRatio || 1, 2);
+if (width === lastWidth &amp;&amp; height === lastHeight &amp;&amp; ratio === lastRatio) {
+draw();
+return;
+}
+lastWidth = width;
+lastHeight = height;
+lastRatio = ratio;
 canvas.width = Math.round(width * ratio);
 canvas.height = Math.round(height * ratio);
 ctx.setTransform(ratio, 0, 0, ratio, 0, 0);
 draw();
+}
+function scheduleResize() {
+window.requestAnimationFrame(resize);
 }
 function project(vector) {
 const cy = Math.cos(state.yaw);
@@ -281,9 +295,17 @@ event.preventDefault();
 state.zoom = Math.max(0.65, Math.min(1.5, state.zoom - event.deltaY * 0.001));
 draw();
 }, { passive: false });
-window.addEventListener('resize', resize);
+window.addEventListener('resize', scheduleResize);
+window.addEventListener('load', scheduleResize);
+if (window.ResizeObserver) {
+new ResizeObserver(scheduleResize).observe(stage);
+}
+if (document.fonts &amp;&amp; document.fonts.ready) {
+document.fonts.ready.then(scheduleResize);
+}
 updateText();
-resize();
+scheduleResize();
+window.setTimeout(scheduleResize, 120);
 }());
 &lt;/script>
 &lt;style>
